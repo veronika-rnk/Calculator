@@ -10,8 +10,8 @@ public class Program{
             int vibor = sc.nextInt();
             if (vibor == 1 || vibor == 2) {
                 if(vibor == 2) {
-                    System.out.println("Введите 0 для вычисления объема цилиндра");
-                    System.out.println("Введите 5 для вычисления площади треугольника");
+                    System.out.println("Введите 0 для преобразование температуры");
+                    System.out.println("Введите 5 для преобразования веса");
                 }
                 System.out.println("Введите 1 для добавления");
                 System.out.println("Введите 2 для деления");
@@ -33,7 +33,7 @@ public class Program{
 
                 switch (opt) {
                     case 0:
-                        System.out.println("Результат:" + simcalc.getCapacity(Num_1));
+                        simcalc.getTemp(Num_1);
                         break;
 
                     case 1:
@@ -53,7 +53,7 @@ public class Program{
                         break;
 
                     case 5:
-                        System.out.println("Результат:" + simcalc.getSquare(Num_1));
+                        simcalc.getPeretv(Num_1);
                         break;
                 }
                 System.out.println("Желаете продолжить? + если да, - если нет");
